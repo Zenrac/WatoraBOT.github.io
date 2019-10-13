@@ -1,3 +1,2 @@
-# Watora official website
-
-This is a static website powered by Github pages.
+# watora.xyz
+Watora's official website

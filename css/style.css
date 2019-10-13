@@ -1,0 +1,83 @@
+* {
+	font-family: 'Helvetica Neueu', Helvetica, Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+@font-face {
+	font-family: "Lato-Regular";
+	src: url('polices/Lato-Regular.ttf');
+}
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	color: black;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	background-color: #0082A7;
+	background:linear-gradient( rgba(0, 0, 0, 0.75) 100%, rgba(255, 255, 255, 0.25) 100%);
+}
+
+.bigavatar {
+	width: 300px;
+    border-radius: 50%;
+    border: 5px #d3664d solid;
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform: translatey(0px);
+    display: block;
+    margin: auto;
+    animation: float 6s ease-in-out infinite;
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+
+.wb_button {
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    width: 198px;
+    height: 42px;
+    font-family: Tahoma,Geneva,sans-serif;
+    font-size: 14px;
+    text-align: center;
+    border: 2px solid #00bbff;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    background: #70dbff none repeat left top;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.wb_button:hover {
+    background-color: white;
+}
+
+.wb_button span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 300%;
+}
+
+.toptext {
+	text-align: center;
+}
+
+.topbuttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
