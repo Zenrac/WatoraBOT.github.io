@@ -26,7 +26,7 @@ body {
 }
 
 .bigavatar {
-	width: 300px;
+		width: 300px;
     border-radius: 50%;
     border: 5px #d3664d solid;
     box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
@@ -35,7 +35,6 @@ body {
     margin: auto;
     animation: float 6s ease-in-out infinite;
     overflow: hidden;
-    margin-bottom: 30px;
 }
 
 .wb_button {
@@ -79,4 +78,26 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.stats img {
+  display: block;
+  margin: auto;
+  width: 300px;
+  margin: -40px auto -30px auto;
+  overflow: hidden;
+}
+
+.stats {
+  overflow: hidden;
+}
+
+.haut {
+  margin: 300px;
+  color: black;
+  padding: 10px;
+}
+
+.top {
+	padding: 30px;
 }
