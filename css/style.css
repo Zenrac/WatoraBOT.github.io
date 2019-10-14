@@ -71,7 +71,7 @@ footer {
 	justify-content: space-between;
 }
 
-@media (max-width: 640px) {
+@media screen and (max-height: 600px) {
 	footer {
 		position: relative;
 	}
