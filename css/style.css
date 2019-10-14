@@ -71,6 +71,12 @@ footer {
 	justify-content: space-between;
 }
 
+@media (max-width: 640px) {
+	footer {
+		position: relative;
+	}
+}
+
 .pink {
 	color: #FF015B;
 }
