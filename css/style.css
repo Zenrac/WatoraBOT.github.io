@@ -25,16 +25,63 @@ body {
 	background-color: #232830;
 }
 
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
 .bigavatar {
 		width: 300px;
     border-radius: 50%;
-    border: 5px #d3664d solid;
+    border: 5px #FF015B solid;
     box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
     transform: translatey(0px);
     display: block;
     margin: auto;
     animation: float 6s ease-in-out infinite;
     overflow: hidden;
+}
+
+.toptext h1 {
+	color: #FF015B;
+	font: 700 48px Times New Roman, Times, serif;
+	font-size: 50px;
+}
+
+.toptext h3 {
+	color: white;
+}
+
+footer {
+	bottom: 0;
+  position: fixed;
+  background: rgba(255, 255, 255, .05);
+  width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.pink {
+	color: #FF015B;
+}
+
+.blue {
+	color: #1972F5;
+}
+
+footer span {
+	color: white;
+	padding: 5px;
 }
 
 .wb_button {
@@ -50,14 +97,15 @@ body {
     font-family: Tahoma,Geneva,sans-serif;
     font-size: 14px;
     text-align: center;
-    border: 2px solid #00bbff;
+    border: 2px solid #195FF5;
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
     border-radius: 2px;
-    background: #70dbff none repeat left top;
+    background: #1972F5 none repeat left top;
     color: black;
     text-decoration: none;
     font-weight: bold;
+		transition: 0.3s;
 }
 
 .wb_button:hover {
@@ -100,4 +148,37 @@ body {
 
 .top {
 	padding: 30px;
+}
+
+.block {
+	display: block;
+}
+
+.icon {
+	padding: 10px;
+}
+
+.icon a i {
+	color: white;
+	font-size: 30px;
+	padding: 10px;
+	background-color: grey;
+	transition: 0.3s;
+}
+
+.github a i:hover {
+	background-color: black;
+}
+
+.patreon a i:hover {
+	background-color: rgb(249, 104, 84);
+}
+
+.docs a i:hover {
+	background-color: #FF015B;
+}
+
+.links {
+	display: flex;
+	padding: 1px;
 }
