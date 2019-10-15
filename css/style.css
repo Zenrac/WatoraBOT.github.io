@@ -68,7 +68,7 @@ footer {
   background: rgba(255, 255, 255, .05);
   width: 100%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 }
 
 @media screen and (max-height: 700px) , screen and (max-width: 700px) {
@@ -180,7 +180,7 @@ footer span {
 }
 
 .icon {
-	padding: 10px;
+	padding: 20px;
 }
 
 .icon a i {
@@ -189,6 +189,7 @@ footer span {
 	padding: 10px;
 	background-color: #232830;
 	transition: 0.3s;
+	border-radius: 5px;
 }
 
 .github a i:hover {
