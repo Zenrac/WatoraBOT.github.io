@@ -81,12 +81,20 @@ footer {
 	.wb_button {
 		width: 100px !important;
 	}
+	.bigavatar {
+		width: 230px;
+	}
 
 	.toptext h3 span {
 		font-size: 25px;
 	}
 }
 
+@media screen and (max-width: 900px) {
+	.top {
+		padding: 20px !important;
+	}
+}
 
 .pink {
 	color: #FF015B;
