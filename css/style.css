@@ -179,7 +179,7 @@ footer span {
 	color: white;
 	font-size: 30px;
 	padding: 10px;
-	background-color: grey;
+	background-color: #232830;
 	transition: 0.3s;
 }
 
@@ -197,5 +197,4 @@ footer span {
 
 .links {
 	display: flex;
-	padding: 1px;
 }
