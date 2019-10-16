@@ -27,6 +27,13 @@
   		console.log(allposts[i]);
   		window.location = allposts[i];
   	}
+    else {
+      var i = allpostsUpperCase.indexOf(url.toUpperCase() + '.HTML');
+      if (i != -1) {
+        console.log(allposts[i]);
+        window.location = allposts[i];
+      }
+    }
   }
   window.onload = redirectToCorrectPage;
 </script>
