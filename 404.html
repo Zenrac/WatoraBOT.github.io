@@ -5,7 +5,6 @@
 <script>
   var allposts = [];
   function redirectToCorrectPage() {
-    console.log("Unable to find page. Trying other URL cases.");
   	{% for post in site.pages %}
   		allposts.push("{{ post.url }}");
   	{% endfor %}
@@ -21,16 +20,13 @@
   	  	}
   		return value.toUpperCase();
   	});
-  	console.log("Looking for "+url.toUpperCase() + " in "+allpostsUpperCase);
   	var i = allpostsUpperCase.indexOf(url.toUpperCase());
   	if (i != -1) {
-  		console.log(allposts[i]);
   		window.location = allposts[i];
   	}
     else {
       var i = allpostsUpperCase.indexOf(url.toUpperCase() + '.HTML');
       if (i != -1) {
-        console.log(allposts[i]);
         window.location = allposts[i];
       }
     }
