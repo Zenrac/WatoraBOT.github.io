@@ -20,12 +20,12 @@
   	  	}
   		return value.toUpperCase();
   	});
-  	var i = allpostsUpperCase.indexOf(url.toUpperCase());
-  	if (i != -1) {
-  		window.location = allposts[i];
-  	}
+    var i = allpostsUpperCase.indexOf(url.toUpperCase() + '.HTML');
+    if (i != -1) {
+      window.location = allposts[i];
+    }
     else {
-      var i = allpostsUpperCase.indexOf(url.toUpperCase() + '.HTML');
+      var i = allpostsUpperCase.indexOf('EN/' + url.toUpperCase() + '.HTML');
       if (i != -1) {
         window.location = allposts[i];
       }
