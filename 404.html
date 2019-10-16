@@ -6,7 +6,7 @@
   var allposts = [];
   function redirectToCorrectPage() {
   	{% for post in site.pages %}
-  		allposts.push("{{ post.url }}");
+  		allposts.push("{{ post.url }}".split('.')[0]);
   	{% endfor %}
   	var url = window.location.pathname;
   	// strip trailing /
@@ -16,18 +16,18 @@
   	var allpostsUpperCase = allposts.map(function(value) {
   	  	// strip trailing /
   	  	if (value.slice(-1) === "/") {
-  			value = value.slice(0, -1);
+  			     value = value.slice(0, -1);
   	  	}
   		return value.toUpperCase();
   	});
-    console.log("Looking for " + url.toUpperCase() + '.HTML' + " in " + allpostsUpperCase);
-    var i = allpostsUpperCase.indexOf(url.toUpperCase() + '.HTML');
+    console.log("Looking for " + url.toUpperCase() + " in " + allpostsUpperCase);
+    var i = allpostsUpperCase.indexOf(url.toUpperCase());
     if (i != -1) {
       window.location = allposts[i];
     }
     else {
-      console.log("Looking for " + '/EN' + url.toUpperCase() + '.HTML' + " in " + allpostsUpperCase);
-      var i = allpostsUpperCase.indexOf('/EN' + url.toUpperCase() + '.HTML');
+      console.log("Looking for " + '/EN' + url.toUpperCase() + " in " + allpostsUpperCase);
+      var i = allpostsUpperCase.indexOf('/EN' + url.toUpperCase());
       if (i != -1) {
         window.location = allposts[i];
       }
