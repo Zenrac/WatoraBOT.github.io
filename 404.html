@@ -20,12 +20,14 @@
   	  	}
   		return value.toUpperCase();
   	});
+    console.log("Looking for " + url.toUpperCase() + '.HTML' + " in " + allpostsUpperCase);
     var i = allpostsUpperCase.indexOf(url.toUpperCase() + '.HTML');
     if (i != -1) {
       window.location = allposts[i];
     }
     else {
-      var i = 'EN/' + allpostsUpperCase.indexOf(url.toUpperCase() + '.HTML');
+      console.log("Looking for " 'EN/' + url.toUpperCase() + '.HTML' + " in " + allpostsUpperCase);
+      var i = allpostsUpperCase.indexOf('EN/' + url.toUpperCase() + '.HTML');
       if (i != -1) {
         window.location = allposts[i];
       }
