@@ -6,12 +6,12 @@ title: Thank you
   {% include header.html %}
   <body>
     <script>
-        swal({
+        swal.fire({
             title: "Successfully added to your server!",
             text: "Thanks a lot!",
             type: "success"
         }).then(function() {
-            window.location = "././";
+            window.location = '{{ "/" | absolute_url }}';
         });
     </script>
     {% include footer.html %}
