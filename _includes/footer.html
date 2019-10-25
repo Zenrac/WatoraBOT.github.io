@@ -32,6 +32,11 @@
     }
     // Apply when page is loading
     footerAlwayInBottom($("#footer"));
+
+    // Apply when page is ready
+    $( document ).ready(function() {
+      footerAlwayInBottom($("#footer"));
+    };
     // Apply when page is resizing
     $(window).resize(function() {
         footerAlwayInBottom($("#footer"));
