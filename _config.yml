@@ -1,4 +1,5 @@
 theme: jekyll-theme-cayman
+url : http://watora.xyz
 
 plugins:
   - jekyll-redirect-from
