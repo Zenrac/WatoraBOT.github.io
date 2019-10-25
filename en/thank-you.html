@@ -2,24 +2,6 @@
 title: Thank you
 ---
 
-<html>
-  {% include header.html %}
-  <body>
-    <script>
-        swal.fire({
-            title: "Successfully added to your server!",
-            text: "Thanks a lot!",
-            type: "success"
-        }).then(function() {
-            window.location = '{{ "/" | absolute_url }}';
-        });
-    </script>
-    {% include footer.html %}
-  </body>
-</html>
-
-<style>
-  footer {
-    position: fixed !important;
-  }
-</style>
+<script>
+  window.location.replace('{{ "?invited=yes" | absolute_url }}');
+</script>
