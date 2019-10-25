@@ -1,0 +1,39 @@
+<footer id="footer">
+  <script>
+    jQuery(document).ready(function($) {
+      /**
+       * Set footer always on the bottom of the page
+       */
+      function footerAlwayInBottom(footerSelector) {
+          var docHeight = $(window).height();
+          var footerTop = footerSelector.position().top + footerSelector.height();
+          if (footerTop < docHeight) {
+              footerSelector.css("margin-top", (docHeight - footerTop) + "px");
+          }
+      }
+      // Apply when page is loading
+      footerAlwayInBottom($("#footer"));
+      // Apply when page is resizing
+      $(window).resize(function() {
+          footerAlwayInBottom($("#footer"));
+      });
+    });
+  </script>
+  <div class="links">
+    <div class="icon patreon">
+      <a href="https://www.patreon.com/bePatron?u=7139372">
+        <i class="fa fa-patreon"></i>
+      </a>
+    </div>
+    <div class="icon github">
+      <a href="https://github.com/WatoraBOT/WatoraBOT.github.io">
+        <i class="fa fa-github"></i>
+      </a>
+    </div>
+    <div class="icon docs">
+      <a href="https://docs.watora.xyz">
+        <i class="fa fa-book"></i>
+      </a>
+    </div>
+  </div>
+</footer>
