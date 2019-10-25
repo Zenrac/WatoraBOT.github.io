@@ -20,13 +20,11 @@
   	  	}
   		return value.toUpperCase();
   	});
-    console.log("Looking for " + url.toUpperCase() + " in " + allpostsUpperCase);
     var i = allpostsUpperCase.indexOf(url.toUpperCase());
     if (i != -1) {
       window.location = allposts[i];
     }
     else {
-      console.log("Looking for " + '/EN' + url.toUpperCase() + " in " + allpostsUpperCase);
       var i = allpostsUpperCase.indexOf('/EN' + url.toUpperCase());
       if (i != -1) {
         window.location = allposts[i];
