@@ -210,6 +210,10 @@ footer span {
 	border-radius: 5px;
 }
 
+.icon a:hover {
+	cursor: pointer;
+}
+
 .github a i:hover {
 	background-color: black;
 }
