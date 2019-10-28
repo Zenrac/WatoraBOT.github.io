@@ -84,6 +84,11 @@ footer {
 		font-size: 40px;
 	}
 
+	.icon a i {
+		font-size: 20px;
+		padding: 7px;
+	}
+
 }
 
 @media screen and (max-width: 700px) {
@@ -215,4 +220,8 @@ footer span {
 
 .links {
 	display: flex;
+}
+
+.stats {
+	margin: 10px;
 }
