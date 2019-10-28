@@ -210,7 +210,7 @@ footer span {
 	border-radius: 5px;
 }
 
-.icon a:hover {
+.icon a i:hover {
 	cursor: pointer;
 }
 
