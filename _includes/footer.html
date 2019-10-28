@@ -41,5 +41,12 @@
     $(window).resize(function() {
         footerAlwayInBottom($("#footer"));
     });
+
+    // Remove url text on mouseover for icons links
+    $('.icon a').each(function(){
+      $(this).attr('onclick','window.location.href="' + $(this).attr('href')+'"');
+      $(this).attr('href','#');
+    });
+
   });
 </script>
