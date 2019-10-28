@@ -20,6 +20,15 @@
 
 <script>
   jQuery(document).ready(function($) {
+    // Remove url text on mouseover for icons links
+    $('.icon a').each(function(){
+      $(this).attr('onclick','window.location.href="' + $(this).attr('href')+'"');
+      $(this).attr('href','#');
+    });
+  });
+
+
+  jQuery(document).ready(function($) {
     /**
      * Set footer always on the bottom of the page
      */
@@ -33,20 +42,9 @@
     // Apply when page is loading
     footerAlwayInBottom($("#footer"));
 
-    // Apply when page is ready
-    $( document ).ready(function() {
-      footerAlwayInBottom($("#footer"));
-    };
     // Apply when page is resizing
     $(window).resize(function() {
         footerAlwayInBottom($("#footer"));
     });
-
-    // Remove url text on mouseover for icons links
-    $('.icon a').each(function(){
-      $(this).attr('onclick','window.location.href="' + $(this).attr('href')+'"');
-      $(this).attr('href','#');
-    });
-
   });
 </script>
