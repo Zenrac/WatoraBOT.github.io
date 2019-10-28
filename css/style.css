@@ -167,6 +167,10 @@ footer span {
     align-items: center;
 }
 
+.topbuttons div {
+	padding: 5px;
+}
+
 .stats img {
   display: block;
   margin: auto;
