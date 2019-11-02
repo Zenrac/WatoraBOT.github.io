@@ -5,6 +5,8 @@ title: Home
 <html>
   {% include header.html %}
 
+  <div id='scriptcanvas'></div>
+
   <script type="text/javascript">
     if (window.location.search.indexOf('invited=yes') > -1) {
       swal.fire({
@@ -14,11 +16,9 @@ title: Home
       });
     }
 
-    loadScript('{{ "js/canvas.js" | absolute_url }}');
+    loadScript('{{ "js/canvas.js" | absolute_url }}', true, document.getElementById('scriptcanvas'));
     backgroundEffect('canvas');
   </script>
-
-
 
   <body>
     <div class="top">

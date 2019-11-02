@@ -1,4 +1,4 @@
-function loadScript (source, ensure_http = true) {
+function loadScript (source, ensure_http = true, element = document.body) {
    var scr = document.createElement("script");
    if (ensure_http) {
      if (!source.includes('https')) {
@@ -6,5 +6,5 @@ function loadScript (source, ensure_http = true) {
      }
    }
    scr.src = source;
-   document.body.appendChild(scr);
+   element.appendChild(scr);
 }
