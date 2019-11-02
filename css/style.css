@@ -23,6 +23,12 @@ body {
 	align-items: center;
 	width: 100%;
 	background-color: #232830;
+	scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  /* This is the magic bit for WebKit */
+  display: none;
 }
 
 @keyframes float {
