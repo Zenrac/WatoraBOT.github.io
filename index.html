@@ -5,7 +5,7 @@ title: Home
 <html>
   {% include header.html %}
 
-  <div id='scriptcanvas'></div>
+  <script type="text/javascript">backgroundEffect('canvas');</script>
 
   <script type="text/javascript">
     if (window.location.search.indexOf('invited=yes') > -1) {
@@ -15,9 +15,6 @@ title: Home
           type: "success"
       });
     }
-
-    loadScript('{{ "js/canvas.js" | absolute_url }}', true, document.getElementById('scriptcanvas'));
-    backgroundEffect('canvas');
   </script>
 
   <body>
