@@ -244,4 +244,6 @@ footer span {
 	height: 100%;
 	z-index: -5;
 	opacity: 0.1;
+	top: 0;
+	left: 0;
 }
