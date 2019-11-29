@@ -5,18 +5,18 @@ title: Home
 <html>
   {% include header.html %}
 
-  <script type="text/javascript">
-    if (window.location.search.indexOf('invited=yes') > -1) {
-      swal.fire({
-          title: "Successfully added to your server!",
-          text: "Thanks a lot!",
-          type: "success"
-      });
-    }
-  </script>
-  
-  <script data-ad-client="ca-pub-2168638075916485" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  {% if page.url contains "?invited=yes" %}
+    <script type="text/javascript">
+        swal.fire({
+            title: "Successfully added to your server!",
+            text: "Thanks a lot!",
+            type: "success"
+        });
+    </script>
 
+    <script data-ad-client="ca-pub-2168638075916485" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  {% endif %}
+  
   <body>
 
     <canvas id="canvas"></canvas>
