@@ -238,6 +238,10 @@ footer span {
 	margin: 10px;
 }
 
+.mainblock {
+	margin-top: 5%;
+}
+
 #canvas {
 	position: absolute;
 	width: 100%;
